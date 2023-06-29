@@ -1,14 +1,22 @@
 import styles from "./styles.module.css"
-export default function Navbar({ children }: {
-  children: React.ReactNode
+import Image from 'next/image'
+
+export default function Navbar({ children, user }: {
+  children: React.ReactNode,
+  user: any
 }) {
-  console.log(styles)
   return (
     <div className={styles.container}>
       <nav className={styles["navbar-container"]}>
         <header>
-          <img />
-          <h2>User Name</h2>
+          <Image
+            src={user.image}
+            alt="profile image"
+            width={70}
+            height={70}
+            className={styles["profile-image"]}
+          />
+          <h2>{user.name}</h2>
         </header>
         <div>
           <ul>

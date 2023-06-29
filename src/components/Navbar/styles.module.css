@@ -10,10 +10,15 @@
   width: 25%;
   height: 100%;
   background-color: var(--primary-color);
+  color: var(--font-light-color);
   padding: 16px;
 }
 
 .navbar-container ul{
   list-style: none;
 
+}
+
+.profile-image{
+  border-radius: 50px;
 }

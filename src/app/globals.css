@@ -1,7 +1,9 @@
 :root {
-  --primary-color: #20D078;
-  --font-color: #2D2D2A;
-  --secondary-color: #38423B;
+  --primary-color: #471323;
+  --font-light-color: #F1E6E9;
+  --font-dark-color: #130308;
+
+  --secondary-color: #5B2E48;
 
 }
 
@@ -9,7 +11,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  color: var(--font-color)
 }
 
 html,
@@ -18,4 +19,5 @@ body {
   overflow-x: hidden;
   margin: 0 !important;
   height: 100%;
+  color: var(--font-dark-color)
 }
