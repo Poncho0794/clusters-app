@@ -10,7 +10,6 @@ export default async function Layout({ children }: {
   const session = await getServerSession(authOptions)
   if(!session) redirect('/');
   const { user } = session
-  console.log(user)
   return <Navbar user={user}>
     {children}
   </Navbar>

@@ -22,5 +22,5 @@ export async function GET(){
     console.error(e)
   }
   
-  return NextResponse.json({ house: houses })
+  return NextResponse.json({ houses })
 }
