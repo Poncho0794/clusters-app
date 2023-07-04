@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar"
-import { GetServerSideProps } from "next"
+import { authOptions } from "@/helpers/authOptions";
 import { getServerSession } from "next-auth/next"
-import { authOptions } from "../api/auth/[...nextauth]/route"
 import { redirect } from 'next/navigation';
 
 export default async function Layout({ children }: {
