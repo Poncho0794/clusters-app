@@ -9,7 +9,6 @@ class DatabaseService {
 
   constructor(entity: string) {
     this.entity = entity
-    console.log(this.entity)
     this.storagePath = path.join(process.cwd(), `storage/${this.entity}.json`)
     
     this.storage =  JSON.parse(fs.readFileSync(this.storagePath, 'utf8'));
