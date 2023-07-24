@@ -1,0 +1,14 @@
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  height: 64px;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.signin-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
