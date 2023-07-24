@@ -1,7 +1,8 @@
 import { signIn } from "next-auth/react"
 import styles from "./styles.module.css"
 import Image from 'next/image'
-
+import IconButton from "@mui/material/IconButton"
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 export default function PublicNavabar() {
   return (
     <nav className={styles["navbar-container"]}>
@@ -14,12 +15,14 @@ export default function PublicNavabar() {
         />
       </div>
       <div className={styles["signin-container"]}>
-        <button
+        <IconButton
+        color="info"
         style={{ marginRight: 10 }}
         onClick={() => signIn('auth0', { callbackUrl: '/dashboard' })}
       >
-        Sign in
-      </button>
+          <AccountCircleIcon fontSize="inherit" />
+
+      </IconButton>
       </div>
     </nav>
   )
