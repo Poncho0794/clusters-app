@@ -12,7 +12,6 @@ export default function Page() {
   if (status === "loading") {
     return "Loading"
   }
-  console.log(session)
   return <>
     <h1>Dashboard page</h1>
     <button style={{ marginRight: 10 }} onClick={() => signOut({ callbackUrl: '/' })}>

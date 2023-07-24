@@ -1,3 +1,4 @@
+import Link from "next/link"
 import styles from "./styles.module.css"
 import Image from 'next/image'
 
@@ -20,8 +21,9 @@ export default function Navbar({ children, user }: {
         </header>
         <div>
           <ul>
-            <li> Casas </li>
-            <li> Reservas </li>
+          <li> <Link href="/dashboard">Home</Link> </li>
+
+            <li> <Link href="/dashboard/houses">Houses</Link> </li>
           </ul>
         </div>
       </nav>
